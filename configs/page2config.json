@@ -1,0 +1,17 @@
+{
+  "data": [
+    { "type": 1, "variable_name": "title", "variable_value": "Login Page lagi" },
+    { "type": 2, "variable_name": "email", "variable_value": "email" },
+    { "type": 2, "variable_name": "password", "variable_value": "password" }
+  ],
+  "set": [
+    { "type": 1, "variable_name": "title", "variable_value": "Login Page lagi" },
+    { "type": 2, "variable_name": "email", "variable_value": "email" },
+    { "type": 2, "variable_name": "password", "variable_value": "password" }
+  ],
+  "response_action" : "redirect",
+  "redirect_true" : "/dashboard",
+  "redirect_false" : "/",
+  "catatan" : " ini alamatnya /ceklogin , dan method nya POST handler/controller nya login",
+  "catatan1" : " jika true maka redirect ke redirect_true jika false maka redirect ke redirect_false"
+}

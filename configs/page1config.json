@@ -1,0 +1,22 @@
+{
+  "data": [
+    { "action":"get","type": 0, "variable_name": "username", "variable_value": "username" },
+    { "action":"get","type": 1, "variable_name": "var1", "variable_value": "1" },
+    { "action":"get","type": 1, "variable_name": "action", "variable_value": "/ceklogin" },
+    { "action":"get","type": 1, "variable_name": "var11", "variable_value": "Ini saya" },
+    { "action":"get","type": 1, "variable_name": "var12", "variable_value": "ini juga yaa" },
+    { "action":"get","type": 1, "variable_name": "var13", "variable_value": "2" },
+    { "action":"get","type": 2, "variable_name": "var2", "variable_value": "username" },
+    { "action":"get","type": 3, "variable_name": "var3", "variable_value": "filter" },
+    { "action":"get","action":"get","type": 4, "variable_name": "var4", "variable_value": "id" },
+    { "action":"get", "type": 5, "variable_name": "var5", "variable_value": "document" },
+    { "action":"get","type": 6, "variable_name": "var6", "variable_value": "SELECT * FROM users WHERE id = [[var13]]" } 
+  ],
+  "response_return" : "render",
+  "redirect_true" : "/dashboard",
+  "redirect_false" : "/",
+  "view" : "page1.html",
+  "filename_result":"xxx.xlsx",
+  "autoprefix_filename_result":true,
+  "autosuffix_filename_result":true
+}

@@ -1,0 +1,29 @@
+{
+  "app_name": "DASHBOARD BRIGHT",
+  "is_production": false,
+  "urlName": "localhost",
+  "server": {
+    "host": "localhost",
+    "port": 8033
+  },
+  "database": {
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "user": "root",
+    "password": "root",
+    "name": "bi_db"
+  },
+  "email": {
+    "smtp_host": "smtp.example.com",
+    "smtp_port": 587,
+    "username": "your-email@example.com",
+    "password": "your-email-password",
+    "from": "Dashboard App <your-email@example.com>"
+  },
+  "whatsapp": {
+    "account_sid": "your_twilio_account_sid",
+    "auth_token": "your_twilio_auth_token",
+    "from_number": "whatsapp:+14155238886"
+  }
+}

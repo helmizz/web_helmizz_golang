@@ -1,0 +1,43 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "method": "GET",
+      "handler": "generalcontroller",
+      "view": "page1.html",
+      "pageconfig": "page1config.json",
+      "responreturn": "render"
+    },
+    {
+      "path": "/ceklogin",
+      "method": "POST",
+      "handler": "generalcontroller",
+      "view": "page2.html",
+      "pageconfig": "page2config.json",
+      "redirecttrue": "/dashboard",
+      "redirectfalse": "/"
+    },
+    {
+      "path": "/dashboard",
+      "method": "GET",
+      "handler": "generalcontroller",
+      "view": "page3.html",
+      "pageconfig": "page3config.json",
+      "responreturn": "render",
+      "middlewares": [
+        "Auth",
+        "TouchSession",
+        "RequireRole[admin]"
+      ]
+    },
+    {
+      "path": "/coba",
+      "method": "GET",
+      "handler": "reportcontroller",
+      "view": "report1.html",
+      "pageconfig": "report1config.json"
+    }
+  ],
+  "keterangan1": "ini ga akan dibaca cuma buat keterangan ajah",
+  "keterangan2": " path itu alamat, method itu bisa get,post,update,delete; handler itu controller nya, view itu html template nya jika responreturn nya render; pageconfig itu file config untuk page / halaman tersebut"
+}

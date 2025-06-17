@@ -1,0 +1,8 @@
+{
+  "data": [
+    { "type": 1, "variable_name": "title", "variable_value": "COBA YA" },
+    { "type": 3, "variable_name": "user_id", "variable_value": "user_id" },
+    { "type": 6, "variable_name": "user_data", "variable_value": "SELECT * FROM users WHERE id = [[user_id]]" },
+    { "type": 6, "variable_name": "stats", "variable_value": "SELECT COUNT(*) as count FROM users" }
+  ]
+}
