@@ -1,0 +1,85 @@
+2025/06/05 09:29:34 Config loaded: generalconfig
+2025/06/05 09:29:34 Error pinging database: dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2025/06/05 09:29:34 Failed to connect to database: dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2025/06/05 09:52:12 Config loaded: generalconfig
+2025/06/05 09:52:12 Error pinging database: dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2025/06/05 09:52:12 Failed to connect to database: dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2025/06/05 10:17:43 Config loaded: generalconfig
+2025/06/05 10:17:43 Connected to mysql database
+2025/06/05 10:17:43 Template loaded: page1.html
+2025/06/05 10:17:43 Template loaded: page1x.html
+2025/06/05 10:17:44 Template loaded: page2.html
+2025/06/05 10:17:44 Template loaded: page2x.html
+2025/06/05 10:17:44 Template loaded: page3.html
+2025/06/05 10:17:44 Template loaded: page3x.html
+2025/06/05 10:17:44 Template loaded: report1.html
+2025/06/05 10:17:44 ==========================
+2025/06/05 10:17:44 Starting server at %!s(int=8033)
+2025/06/05 10:17:44 ==========================
+2025/06/05 11:31:05 Accessed GET / by generalcontroller
+2025/06/11 16:10:11 Accessed GET / by generalcontroller
+2025/06/11 16:10:16 Accessed POST /ceklogin by generalcontroller
+2025/06/11 16:10:23 Accessed POST /ceklogin by generalcontroller
+2025/06/12 13:13:15 Config loaded: generalconfig
+2025/06/12 13:13:15 Connected to mysql database
+2025/06/12 13:13:16 Template loaded: page1.html
+2025/06/12 13:13:16 Template loaded: page1x.html
+2025/06/12 13:13:16 Template loaded: page2.html
+2025/06/12 13:13:16 Template loaded: page2x.html
+2025/06/12 13:13:16 Template loaded: page3.html
+2025/06/12 13:13:16 Template loaded: page3x.html
+2025/06/12 13:13:16 Template loaded: report1.html
+2025/06/12 13:13:16 ==========================
+2025/06/12 13:13:16 Starting server at %!s(int=8033)
+2025/06/12 13:13:16 ==========================
+2025/06/12 14:20:14 Template changed, reloading: page1.html
+2025/06/12 14:20:14 Template loaded: page1.html
+2025/06/12 14:20:22 Accessed GET / by generalcontroller
+2025/06/12 14:22:44 Config loaded: generalconfig
+2025/06/12 14:22:44 Connected to mysql database
+2025/06/12 14:22:44 Template loaded: page1.html
+2025/06/12 14:22:44 Template loaded: page1x.html
+2025/06/12 14:22:44 Template loaded: page2.html
+2025/06/12 14:22:44 Template loaded: page2x.html
+2025/06/12 14:22:44 Template loaded: page3.html
+2025/06/12 14:22:44 Template loaded: page3x.html
+2025/06/12 14:22:44 Template loaded: report1.html
+2025/06/12 14:22:44 ==========================
+2025/06/12 14:22:44 Starting server at %!s(int=8033)
+2025/06/12 14:22:44 ==========================
+2025/06/12 14:41:24 Accessed GET / by generalcontroller
+2025/06/12 14:59:08 Config loaded: generalconfig
+2025/06/12 14:59:08 Connected to mysql database
+2025/06/12 14:59:08 Template loaded: page1.html
+2025/06/12 14:59:08 Template loaded: page1x.html
+2025/06/12 14:59:08 Template loaded: page2.html
+2025/06/12 14:59:08 Template loaded: page2x.html
+2025/06/12 14:59:08 Template loaded: page3.html
+2025/06/12 14:59:08 Template loaded: page3x.html
+2025/06/12 14:59:08 Template loaded: report1.html
+2025/06/12 14:59:08 ==========================
+2025/06/12 14:59:08 Starting server at %!s(int=8033)
+2025/06/12 14:59:08 ==========================
+2025/06/12 22:48:44 Accessed GET / by generalcontroller
+2025/06/13 17:27:47 Accessed POST /ceklogin by generalcontroller
+2025/06/13 22:27:59 Accessed GET / by generalcontroller
+2025/06/13 22:27:59 Error executing query: dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2025/06/13 22:27:59 SQL syntak: SELECT * FROM users WHERE id = 2
+2025/06/13 22:28:29 Accessed GET / by generalcontroller
+2025/06/13 22:28:29 Error executing query: dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it.
+2025/06/13 22:28:29 SQL syntak: SELECT * FROM users WHERE id = 2
+2025/06/13 22:28:58 Accessed GET / by generalcontroller
+2025/06/16 09:41:57 Config loaded: generalconfig
+2025/06/16 09:41:57 Connected to mysql database
+2025/06/16 09:41:57 Template loaded: page1.html
+2025/06/16 09:41:57 Template loaded: page1x.html
+2025/06/16 09:41:58 Template loaded: page2.html
+2025/06/16 09:41:58 Template loaded: page2x.html
+2025/06/16 09:41:58 Template loaded: page3.html
+2025/06/16 09:41:58 Template loaded: page3x.html
+2025/06/16 09:41:58 Template loaded: report1.html
+2025/06/16 09:41:58 ==========================
+2025/06/16 09:41:58 Starting server at %!s(int=8033)
+2025/06/16 09:41:58 ==========================
+2025/06/16 09:41:58 Accessed GET / by generalcontroller
+2025/06/16 09:41:58 Error parsing page config file: json: cannot unmarshal array into Go struct field PageConfig.middleware of type string

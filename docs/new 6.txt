@@ -1,0 +1,198 @@
+buat website yang diubah hanya :
+1.routeconfig json
+2.pageconfig json
+3.view ( html template )
+4. controller jika diperlukan
+
+
+buatkan program dengan menggunakan golang
+
+dengan point beberapa hal :
+- menggunakan framework echo
+- menggunakan viper untuk config
+- dengan metode MVC + service + utils
+- dan manfaatkan middleware
+- database bisa multi ( mysql, postgresql , ms sql server dll )
+- dengan folder : configs, controllers, middlewares,models,routes, services, views , utils , docs , logs 
+
+
+file-file configs :
+
+- generalconfig.json
+- routeconfig.json
+- perpage misalnya :
+   page1config.json
+   page2config.json
+   page3config.json
+   
+
+
+file-file utils :
+ loadconfig
+ loadconfigpage( namafileJson string )
+ jsontovariabel( namafileJson string )
+
+
+file-file di views :
+	page1.html
+	page2.html
+	page3.html
+
+sehingga ketika sudah jalan, 
+ketika ada perubahan hanya dengan mengubah dua file yaitu :
+
+pagexxxconfig.json
+
+dan template di views
+
+views/page1.html
+
+
+- jika is_production = false, artinya development, jika sedang program sedang jalan maka kalau diubah view ( file html nya ) maka akan akan ikut berubah tanpa harus stop server
+- dengan contoh file config : json sebagai berikut :
+
+contoh generalconfig.json :
+
+{
+  "app_name": "Dashboard App",
+  "is_production": true,
+  "urlname" : "localhost",
+  "server": {
+    "host": "localhost",
+    "port": 8080
+  },
+  "database": {
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "user": "root",
+    "password": "root",
+    "name": "bi_db"
+  },
+  "email": {
+    "smtp_host": "smtp.example.com",
+    "smtp_port": 587,
+    "username": "your-email@example.com",
+    "password": "your-email-password",
+    "from": "Dashboard App <your-email@example.com>"
+  },
+  
+  "whatsapp": {
+    "account_sid": "your_twilio_account_sid",
+    "auth_token": "your_twilio_auth_token",
+    "from_number": "whatsapp:+14155238886"
+  }
+}
+
+contoh routeconfig.json :
+{
+  "routes": [
+    { "path": "/", "method": "GET", "handler": "generalcontroller", "view" : "page1.html","page1config":"page1config.json"},
+    { "path": "/login", "method": "POST", "handler": "generalcontroller", "view" : "page2.html","page1config":"page2config.json"},
+    { "path": "/dashboard", "method": "GET", "handler": "generalcontroller", "view" : "page3.html","page1config":"page3config.json" }
+  
+  ]
+}
+
+contoh page1config.json
+
+{
+"data": [
+    { "action":"get", "type": 1, "variable_name": "var1", "variable_value": "Isi Datanya var 1"},
+    { "type": 2, "variable_name": "var2", "variable_value": "Isi Datanya var 2"},
+    { "type": 3, "variable_name": "var3", "variable_value": "Isi Datanya var 3"},
+    { "type": 4, "variable_name": "var4", "variable_value": "Isi Datanya var 4"},
+    { "type": 5, "variable_name": "var5", "variable_value": "Isi Datanya var 5"},
+    { "type": 6, "variable_name": "var6", "variable_value": "select * from nama_tabel where id = [[var1]]"},
+	{ "type": 7, "variable_name": "var7", "variable_value": "Isi Datanya var 5"},
+	{ "type": 8, "variable_name": "var7", "variable_value": "Isi Datanya var 5"},
+	{ "type": 9, "variable_name": "var7", "variable_value": "Isi Datanya var 5"},
+	{ "type": 10, "variable_name": "var7", "variable_value": "Isi Datanya var 5"},
+  ]
+}
+
+
+aturan untuk file utils
+loadconfigpage(namafileJson string)
+{
+sebagai berikut :
+
+func loadconfigpage(namafileJson string) dataReturn
+
+type = 1 , maka , variabel dataReturn["nama_variabel"]= value_variabel
+type = 2 , maka , variabel dataReturn["nama_variabel"]= echo.FormValue("nama_variabel")
+type = 3 , maka , variabel dataReturn["nama_variabel"]= echo.QueryParam("nama_variabel") 
+type = 4 , maka , variabel dataReturn["nama_variabel"]= echo.Param("nama_variabel")
+type = 5 , maka , variabel dataReturn["nama_variabel"]= echo.FormFile("nama_variabel")
+type = 6 , maka , variabel dataReturn["nama_variabel"]= hasil dari eksekusi query : " select * from tabel where id=[[ nama_id ]] " , dengan nama_id direplace dari dataReturn["nama_variabel"]
+
+1. fix value
+2. response method POST
+3. response method GET
+4. response from route  route /   --> sample localhost/user/:id
+5. response from POST for file upload
+6. sql
+7. config global
+8. config route
+9. from middleware
+10. from session
+
+
+untuk set :
+- sql ( update, insert, delete )
+- session ( set session () , set/create,delete,update )
+- set cookies (set/create,delete,update)
+- create file xls
+- create file pdf
+- send mail
+- send wa
+- create report html
+
+
+
+
+
+
+return dataReturn
+
+
+
+RESPONSE :
+
+1. String  --> return c.String(http.StatusOK, "Hello, World!")
+2. HTML
+3. HTML Blob
+4. Render Template
+5. JSON
+6. Stream JSON
+7. JSON Pretty
+8. JSON Blob
+9. JSONP
+10. XML
+11. Stream XML
+12. XML Pretty
+13. XML Blob
+14. Send File
+15. Send Attachment
+16. Send Inline
+17. Send Blob
+18. Send Stream
+19. Send No Content
+20. Redirect Request
+21. Before Response
+22. After Response
+
+
+kuatin basic nya
+siang meeting sama 
+tanggal 10 launching 
+
+
+labstore rekening bu nila --> ESB
+
+
+
+
+
+
+
